@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- code font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <section class="lading_page">
+        <div class="fundo"><img src="./img/pixelcut-export.jpeg" alt=""></div>
+
+        <div class="interface">
+            <nav class="navegation" data-anime="left">
+                    <div class="nav1">
+                        <ul>
+                            <li><a href="#promo1">POPULARES</a></li>
+                            <li><a href="#">WOMAN</a></li>
+                            <li><a href="#promo1">PROMOÇÕES</a></li>                        
+                        </ul>
+                    </div><!--nav1-->
+                    <div class="nav2">
+                        <a href="1"><i class="bi bi-cart-check"></i></a>
+                        <a href="#"><i class="bi bi-justify"></i></a>
+                    </div><!--nav2-->
+            </nav>
+
+            <section class="meio-site" id="home">
+                    <div class="flex">
+                        <div class="container-capa">
+                            <div class="titulo" data-anime="left">
+                                <h1>NIKE</h1>
+                                <h3>Air Jordan 4</h3>
+                            </div><!--titulo-->
+
+                            <div class="texto-capa" data-anime="left">
+                                <p>O Air Jordan 4 é um dos tênis mais icônicos e reverenciados da linha Air Jordan da Nike. 
+            
+                                    O Jordan 4 introduziu várias características inovadoras, incluindo a tecnologia de amortecimento "Air" visível no calcanhar e uma aba de tornozelo com o logotipo Jumpman. </p>
+                           </div>
+                           
+                            <div class="carrinho" data-anime="left"> <button class="btn_all"  onclick="abrirModal()">CARRINHO+</button> <h3>R$ 400,00</h3></div>
+                        
+                        </div>
+            
+
+        
+                        <div class="imagem-capa">
+                                <div class="tenis-capa"><img src="./img/tenis.png" data-anime="top"></div>
+                                <div class="logo-capa"> <img src="./img/Logo_Brand_Nike_Swoosh_Kiev_PNG_-_Free_Download-removebg-preview.png">  </div>
+                        </div><!--alinhar-->
+                        <div class="carrinho-mobille"> <button class="btn_all"  onclick="abrirModal()">CARRINHO+</button> <h3>R$ 400,00</h3></div>
+              
+                </div> <!--flex-->
+            </section>    
+        </div><!--interface-->
+    </section><!--lading_page-->
+
+
+
+<main>
+            <section class="ecomerce"  id="promo1">
+                    <div class="interface" >
+                         <div class="Grid">                      
+                                <div class="Promoções">
+                                <h1 class="texto-promocoes"><span>PRODUTOS </span> ESPECIAIS <BR>
+                                 LANÇAMENTOS E <SPAN>PROMOÇÕES</SPAN></h1>
+                        
+                    <div class="tenis-item">
+
+
+                            <div id="bloco" class="tenis-model"  data-anime="top">
+                               
+                                    <div class="tenis-item-name"></div>
+                                 <a href="#">
+                                    <div class="imagem-item"> <img src=""> </div>                                                                                                           
+                                    <div class="tenis-item-price">R$ ---</div>
+                                    <div class="tenis-item-add">+</div>
+                                </a>
+                                    
+                            </div><!--bloco-->
+                            
+                            
+                           
+                        </div><!--tenis-area-->
+
+                </div><!--arrumar-->         
+            </div><!--flex-->
+        </div>
+    </section>
+</main>
+    
+<!--===================== janela modal====================== -->
+
+<div class="tenisWindownArea">
+    <div class="tenisWindownBody">
+        <div class="cancelMobile"  onclick="fecharModal()">Voltar</div>
+        <div class="tenisBig"><img src=""></div>
+
+        <div class="tenisInfo">
+            <h1>---</h1>
+            <div class="tenisInfo-sizeArea">
+            <div class="tenisInfo-sector" id="tamanho">Tamanho</div>
+                <div class="tenisInfo-sizes">
+                    <div data-key="0" class="tenisInfo-size">38 <span>cm</span></div>
+                    <div data-key="1" class="tenisInfo-size">39 <span>cm</span></div>
+                    <div data-key="2" class="tenisInfo-size">40 <span>cm</span></div>
+                    <div data-key="3" class="tenisInfo-size selected">41 <span>cm</span></div>
+                </div><!--tenisInfo-sizes-->
+            </div><!--tenisInfo-sizeArea-->
+
+            <div class="tenisInfo-priceArea">
+                <div class="tenisInfo-sector">Preço</div>
+                <div class="tenisInfo-price">
+                    <div class="tenisInfo-actualPrice">R$ --</div>
+                    <div class="tenisInfo-qtarea">
+                        <button class="tenisInfo-qtmenos" onclick="mudarQuantidadeMenos()">-</button>
+                        <div class="tenisInfo-qt"></div>
+                        <button class="tenisInfo-qtmais" onclick="mudarQuantidadeMais()">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tenisInfo-addButton"  class="btn_all">Adicionar ao Carrinho +</div>
+            <div class="tenisInfo-cancelButton" onclick="fecharModal()">Cancel</div>
+        </div><!--tenisInfo-->
+    </div><!--tenisWindownBody-->
+</div><!--tenisWindownArea-->
+
+<section class="navegation-moba">
+    <div class="interface">
+        <div class="nav-mobille">
+            <div class="flex">
+                <a href="#promo1"><div id="Promocoes-mobille"><i class="bi bi-piggy-bank-fill"></i></div></a>
+                <a href="#home"><div id="home-mobille"><i class="bi bi-houses-fill"></i></div></a>
+                <a href=""><div id="carrinho"><i class="bi bi-cart-check"></i></div></a>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./script/pizzas.js"></script>
+<script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,976 @@
+
+/* =============ESTILOS GLOBAIS===================== */
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.interface{
+max-width: 87%;
+margin: 0 auto;
+}
+
+.flex{
+display: flex;
+}
+
+body{
+overflow-x: hidden;
+}
+
+
+/* ==================NAVEGATION============== ==========*/
+
+.navegation, .nav1 ul, .nav2{
+display: flex;
+list-style: none; 
+}
+
+.navegation{
+justify-content: space-between;
+padding-top: 2%;
+align-items: center;
+
+width: 100%;
+}
+
+.nav1{
+margin-left: 0;
+width: 30%;
+}
+
+.navegation .nav1 ul{
+justify-content: space-between;
+width: 100%;
+}
+
+.navegation .nav1 ul li{
+padding-right: 25%;
+}
+
+.navegation .nav2{
+margin-right: 0;
+width: 7%;
+justify-content: right;
+gap: 3rem;
+
+}
+
+.nav2 i{
+color: white;
+height: 100px;
+transform: scale(2);
+font-size: 40px;
+font-weight: 900;
+    
+}
+.navegation a{
+font-size: 1.6rem;
+text-decoration: none;
+color: rgb(255, 255, 255);
+font:900;
+font-family: "Freeman", sans-serif;
+
+    
+}
+
+.navegation a:hover{
+
+color: #b30000ec;
+}
+
+
+
+
+/* ==========================LADDING-PAGE============================= */
+
+
+.ladding_page{
+height: 100%;
+width: 100%;
+position: relative;
+
+}
+
+.fundo img{
+height: 100%;
+width: 100%;
+z-index: -2;
+position: absolute;
+}
+
+.container-capa{
+width: 50%;
+padding-top: 5%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+height: 45rem;
+
+
+}
+
+.container-capa .titulo{
+line-height: 90px;
+}
+
+.meio-site{
+    height: 100%;
+}
+
+.container-capa .titulo h1{
+font-family: "Racing Sans One", sans-serif;
+color: rgb(255, 255, 255);
+font-size: 9rem;
+font-weight: 400;
+}
+
+.container-capa .titulo h3{
+font-family: "Racing Sans One", sans-serif;
+color: rgb(139, 0, 0);
+font-size: 4rem;
+font-weight: 700;
+}
+
+.container-capa p{
+padding-top: 3%;
+color: white;
+font-size: 1.6rem;
+line-height: 50px;
+padding-right: 20%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+max-width: 50rem;
+}
+.container-capa .carrinho{
+    padding-top: 2rem;
+}
+
+.meio-site .imagem-capa{
+width: 45%;
+position: relative;
+height: 25rem;
+display: flex;
+flex-direction: column;
+margin-top: 9.5rem;
+}
+
+.meio-site .flex{
+position: relative;
+}
+
+
+.meio-site .imagem-capa .tenis-capa, .meio-site .imagem-capa .logo-capa{
+width: 90%;
+}
+
+
+.meio-site .imagem-capa .logo-capa img{
+width: 80%;
+position: absolute;
+margin-top: 13rem;
+margin-left: 50%;
+}
+
+.meio-site .imagem-capa .tenis-capa img{
+margin-top: -2rem;
+width: 80%;
+position: absolute;
+margin-left: 2%;
+z-index: 3;
+margin-left: 5rem;
+filter: drop-shadow(50px 30px 50px black);
+animation-name: flutuar;
+animation-duration: 1.5s;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-direction:alternate-reverse;
+}
+
+.carrinho{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    align-items: center;
+   
+    width: 60%;
+}
+
+.carrinho h3{
+    color: #c9c9c9;
+    font-size: 3rem;
+    font-weight: 900;
+   
+}
+.carrinho-mobille{
+    display: none;
+    position: absolute;
+}
+
+
+/* =============================BTN-ALL============================ */
+
+/* CSS */
+.btn_all{
+    background-image: linear-gradient(92.88deg, #bd0202 9.16%, #ce0606 43.89%, #940000 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 18px;
+    font-weight: 00;
+    height: 5rem;
+    width: 13rem;
+    padding: 0 1.9rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn_all:hover {
+    box-shadow: rgb(255, 0, 0) 0 1px 20px;
+    transition-duration: .4s;
+  }
+  
+/* ===============COMPRAS================= */
+
+.ecomerce{
+margin-top: 9rem;
+background-image: linear-gradient(to right bottom, #e4e4e4, #e9e9e9, #797979, #5a5a5a, #676767);
+overflow-y: hidden;
+height:auto;
+}
+
+
+.texto-promocoes{
+    font-family: "Racing Sans One", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    padding-top: 4rem;
+}
+.texto-promocoes span{
+    color: #ce0606;
+}
+
+.tenis-item{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 4rem;
+}
+
+
+/* ====================== ESTILO BLOCO ======================== */
+#bloco{
+
+width: 80%;
+position: relative;
+height: 18rem;
+padding: 20px;
+border-radius: 42px;
+background-image: linear-gradient(to right bottom, #1d1d1d, #000000, #362525, #8b0a0a, #ff0000); /* Cor de fundo semi-transparente */
+backdrop-filter: blur(0px); /* Cor de fundo semi-transparente */
+box-shadow:  8px 15px 5px #000000,
+             -5px -10px 0px #00000000;
+
+}
+
+#bloco .tenis-item-name{
+margin-left: 1rem;
+
+}
+
+#bloco .tenis-item-price{
+position: absolute;
+margin-top: 6rem;
+color: rgb(255, 255, 255);
+font-size: 2.5rem;
+font-weight: 900;
+font-family: Arial, Helvetica, sans-serif;
+opacity: 0;
+transition:transform 1s, opacity 1.2s;
+margin-left: -2rem;
+
+padding-top: 6rem;
+padding-right: 6rem;
+
+
+}
+
+#bloco:hover .tenis-item-price{
+    opacity: 1;
+    transform: translateX(3rem);
+}
+
+
+#bloco:hover .tenis-item-name{
+    opacity: 0;
+}
+
+
+#bloco:hover .imagem-item img{
+transform: translateY(-8rem);
+}
+
+.imagem-item{
+    width: 100%;
+    position: relative;
+   
+}
+
+#bloco .tenis-item-name{
+    color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: 1.5rem; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    transition: opacity 0.6s;
+}
+
+
+
+.imagem-item img{
+position: absolute;
+width: 90%;
+filter: drop-shadow(-10px 10px 0px rgb(255, 255, 255));
+transition: transform ease 1s;
+margin-left: 1.5rem;
+z-index: 9;
+margin-top: 18%;
+
+
+}
+
+
+#bloco .tenis-item-add{
+    font-size: 1.7rem;
+    color: #ffffff;
+    position: absolute;
+    z-index: 9;
+    margin-top: 12.3rem;
+    margin-left: 14rem;
+    background-color: #ff0000;
+    height: 3rem;
+    width: 15%;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border: solid 7px rgb(255, 255, 255);
+    opacity: 0;
+   z-index: 1;
+    transition: all ease 1s, 1s;
+    padding: 10px;
+    
+}
+
+#bloco:hover .tenis-item-add{
+    opacity: 1;
+    transform: translateX(3rem);
+    z-index: 1;
+}
+#bloco:hover{
+    cursor: pointer;
+}
+
+
+/* <!--===================== ESTILO JANELA MODAL====================== --> */
+
+.tenisWindownArea{
+
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    display: none; /*fica não visivel*/
+    transition: all ease .5s;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+
+}
+
+.navegation-moba{
+    display: none;
+}
+
+.tenisInfo-actualPrice, .tenisInfo h1{
+    color: rgb(161, 161, 161);
+    font-weight: 600;
+}
+
+.tenisWindownBody{
+    width: 1000px;
+    height: 500px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #ffffff00;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.tenisBig{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b40e0eda;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 40px;
+    width: 50%;
+}
+.tenisBig--back{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.tenisBig img{
+    
+    width: 80%;
+    filter: drop-shadow(-15px 15px 0px rgb(255, 255, 255));
+}
+
+.tenisInfo{
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+.tenisInfo h1{
+    margin-top: 50px;
+}
+
+.tenisInfo-sector{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.tenisInfo-sizes{
+    display: inline-flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tenisInfo-size{
+    padding: 10px 15px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 226, 226);
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tenisInfo-size:hover{
+    background-color: #8d8d8d;
+}
+
+.tenisInfo-size.selected{
+    background-color: #940000;
+    color: white;
+}
+
+.tenisInfo-size.selected span{
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.tenisInfo-size span{
+    font-size: 17px;
+    color: black;
+    font-weight: 700;
+}
+
+.tenisInfo-price{
+    display: flex;
+    align-items: center;
+}
+
+.tenisInfo-actualPrice{
+    font-size: 28px;
+    margin-right: 30px;
+}
+.tenisInfo-qtarea{
+    display: inline-flex;
+    background-color: white;
+    border-radius: 10px;
+    height: 30px;
+    font-weight: 900;
+    align-items: center;
+    
+}
+
+.tenisInfo-qtarea button{
+    font-weight: 900;
+    border:0;
+    background-color:transparent;
+    font-size:19px;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#333;
+}
+#tenisInfo-addButton{
+    margin-top:3rem;
+    padding:15px 30px;
+    border-radius:20px;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.tenisInfo-cancelButton{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16.5px;
+    margin-left: 1rem;
+    color: white;
+}
+
+.cart {
+    margin-bottom:20px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+.tenis-item-name{
+    position: absolute;
+}
+
+/* =====================animation ========================= */
+
+@keyframes flutuar {
+    0%{
+        transform: translateY(-30px);
+
+    } 
+
+    100%{
+        transform: translateY(-0px);
+    }
+
+}
+
+[data-anime]{ 
+    transition: ease-in-out 1.7s;   
+}
+
+[data-anime="left"]{
+    transform: translate3d(-200px, 0px, 0);
+    opacity: 0;
+}
+
+[data-anime="top"]{
+    opacity: 0;
+    transform: translate3d(0px, 200px, 0);
+}
+
+
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    
+    transition: transform ease-in-out 1s, opacity ease 3s;
+  }
+
+  [data-anime="top"].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    
+    transition: transform ease 1.4s, opacity ease 1.2s;
+  }
+
+
+
+
+/* =================ESTILO RESPONSIVO============================ */
+
+@media(max-width: 920px){
+
+.interface{
+    max-width: 90%;
+}
+body{
+    background-image: linear-gradient(to bottom, #000000, #4b4b4b, #9b9b9b, #797979, #f3f3f3);
+
+
+
+}
+.meio-site{
+    height: 80vh;
+    
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+[data-anime="top"]{
+    opacity: 0;
+    transform: translate3d(0px, 30px, 0);
+}
+
+.navegation{
+ display: none;
+}
+
+.meio-site .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-capa p{
+    display: none;
+}
+.container-capa{
+    width: 100%;
+    padding-top: 9%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .container-capa .titulo{
+        text-align: center;
+    }
+    .container-capa .titulo h1{
+        color: #ffffff;
+    }
+    .carrinho{
+        display: none;
+        position: absolute;
+    }
+.carrinho-mobille{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+    margin-top: -17rem;
+}
+.carrinho-mobille h3{
+ display: none;
+}
+.carrinho-mobille button{
+    margin: 0 auto;
+}
+.fundo{
+    display: none;
+}
+
+.imagem-capa {
+     width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+   
+    margin-top: -6rem;
+    
+   
+}
+.meio-site .imagem-capa .logo-capa img{
+    width: 100%;
+    position: absolute;
+    margin-top: -40rem;
+    display: none;
+    }
+
+.meio-site .imagem-capa .tenis-capa, .meio-site .imagem-capa .logo-capa{
+width: 100%;
+
+}
+    
+    .meio-site .imagem-capa .tenis-capa img{
+    margin-top: 0;
+    width: 100%;
+    position: absolute;
+    margin-left: 0px;
+    z-index: 3;
+    margin-left: 0;
+    filter: drop-shadow(10px -20px 15px rgb(0, 0, 0));
+    margin-top: -47rem;
+    }
+
+    .ecomerce{
+        margin-top:0;
+        background-image: linear-gradient(to right bottom, #ffffff, #e9e9e9, #b0b0b0, #8b8b8b, #676767);
+        height: auto;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        }
+.ladding_page{
+    color: #333;
+    
+}
+.texto-promocoes{
+    padding-top: 20px;
+        font-family: "Racing Sans One", sans-serif;
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 4rem;
+        text-align: center;
+}
+#bloco{
+
+    width: 100%;
+    position: relative;
+    height: 15rem;
+    padding: 20px;
+    border-radius: 42px;
+    background-image: linear-gradient(to right bottom, #1d1d1d, #000000, #362525, #8b0a0a, #ff0000); /* Cor de fundo semi-transparente */
+    backdrop-filter: blur(0px); /* Cor de fundo semi-transparente */
+    box-shadow:  5px 9px 5px #000000,
+                 -5px -5px 0px #00000000;
+    
+    }
+    #bloco .tenis-item-add{
+        display: none;
+    }
+
+
+
+    #bloco .tenis-item-price{
+        position: absolute;
+        margin-top: 4rem;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 1;
+        transition:transform 1s, opacity 1.2s;
+       
+        
+        
+        padding-right: 0rem;
+        
+        
+        }
+
+    .tenis-item{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.3rem;
+        }
+
+        #bloco .tenis-item-name{
+           display: none;
+            
+        }
+
+        .tenisWindownBody{
+            width: 95%;
+            height: 570px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #ffffff00;
+            display: flex;
+            flex-direction: column;
+           
+            margin: 0px 0px;
+            position: relative;
+            padding-left: 8%;
+            
+        }
+        #tamanho{
+            opacity: 0;
+        }
+
+        .tenisInfo h1{
+            margin-top: 50%;
+            opacity: 0;
+        }
+
+        .tenisInfo{
+            position: absolute;
+            flex: 1;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 50px;
+            text-align: center;
+            
+          
+        }
+        .tenis-big{
+            height: 2rem;
+        }
+        
+        #tenisInfo-addButton{
+            margin-top:3rem;
+            padding:12px 20px;
+            border-radius:20px;
+            color:#FFF;
+            display:inline-block;
+            cursor:pointer;
+            margin-right:0px;
+            margin-left: 12%;
+            font-size: 18px;
+            font-weight: 600;
+            
+        }
+        .cancelMobile{
+            z-index: 11;
+            font-weight: 700;
+            font-size: 20px;
+            color: #FFF;
+            text-align: end;
+           margin-right: 20px;
+        }
+
+        .tenisInfo-cancelButton{
+            display: none;
+        }
+
+        .imagem-item img{
+        position: absolute;
+        width: 100%;
+        filter: drop-shadow(-10px 10px 0px rgb(255, 255, 255));
+        transition: transform ease 1s;
+        margin-left: 0.3rem;
+        z-index: 9;
+        margin-top: 20%;
+        }
+
+        .tenisInfo-qtarea{
+            display: inline-flex;
+            background-color: white;
+            border-radius: 10px;
+            height: 30px;
+            font-weight: 900;
+            align-items: center;
+            
+        }
+        .tenisInfo-priceArea{
+            text-align: center;
+        }
+        .tenisInfo-sector{
+            
+            margin-bottom: 1rem;
+        }
+        #bloco:hover .tenis-item-price{
+            opacity: 1;
+            transform: translateX(0rem);
+        }
+        
+        
+        #bloco:hover .tenis-item-name{
+            opacity: 0;
+        }
+        
+        
+        #bloco:hover .imagem-item img{
+        transform: translateY(0rem);
+        }
+
+
+        .navegation-moba{
+            display: inline-block;
+           height: 12%;
+           width: 100%;
+           background: rgba(36, 36, 36, 0.596); /* Cor de fundo semi-transparente */
+           backdrop-filter: blur(10px);
+            border-start-end-radius: 50px;
+            border-start-start-radius: 50px;
+            position: fixed;
+            bottom: 0;
+            z-index: 10;
+
+
+            
+        }
+        .nav-mobille{
+            position:relative;
+            z-index: 9;
+           
+            height: 5rem;
+           
+            width: 90%;
+            margin-top: 5%;
+            margin-left: 5%;  
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-mobille .flex{
+            display: flex;
+            justify-content:space-between;
+            width: 80%;
+
+        }
+        .nav-mobille i{
+         color: white;
+         font-size: 3rem;
+         
+        }
+
+        .tenisBig{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            margin-top: 10px;
+            margin-bottom: 90%;
+            margin-right: 10px;
+            margin-left: -10px;
+
+            border-radius: 40px;
+            width: 95%;
+        }
+        .tenisInfo-price{
+width: 40px;
+        }
+        
+}
+@media (max-width:1450px){
+    #bloco .tenis-item-price{
+        position: absolute;
+        margin-top: 3rem;
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: Arial, Helvetica, sans-serif;
+        opacity: 0;
+        transition:transform 1s, opacity 1.2s;
+        margin-left: -3rem;
+        width: 100%;
+        padding-top: 10rem;
+        
+        
+        
+        }
+        #bloco .tenis-item-add{
+         
+            margin-top: 9rem;
+            margin-left: 1rem;
+            width: 30%;
+           
+            
+        }
+}
